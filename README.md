@@ -1,12 +1,12 @@
-# A First Look at WebAssembly Performance in Satellite Computing
+# Understanding WebAssembly Performance for Satellite Applications in Satellite Computing
 
-This repository contains the evaluation tool ***SatelliteEval*** and a **benchmark suite** developed to study WebAssembly (Wasm) performance in satellite computing. It supports multiple runtime environments, execution modes, and representative satellite onboard tasks, enabling reproducible performance measurements.
+This repository contains the evaluation tool ***SateEval*** and a **benchmark suite** developed to study WebAssembly (Wasm) performance in satellite computing. It supports multiple runtime environments, execution modes, and representative satellite onboard tasks, enabling reproducible performance measurements.
 
-*SatelliteEval* is designed to systematically collect performance data such as execution latency, energy consumption, and thermal impact under simulated satellite conditions. The benchmark suite includes tasks spanning scientific computation, data processing, and AI inference.
+*SateEval* is designed to systematically collect performance data such as execution latency, energy consumption, and thermal impact under simulated satellite conditions. The benchmark suite includes tasks spanning scientific computation, data processing, and AI inference.
 
 ## Repository Contents
 
-* `SatelliteEval/` — Evaluation tool for orchestrating experiments on various Wasm and container-based runtimes.
+* `SateEval/` — Evaluation tool for orchestrating experiments on various Wasm and container-based runtimes.
 
   * **Components**: Planning, Deployment, Execution, Logging, Extraction
   * **Supported Runtimes**:
@@ -40,7 +40,7 @@ This repository contains the evaluation tool ***SatelliteEval*** and a **benchma
 * Raspberry Pi 4B (or comparable COTS device) or equivalent x86/ARM host for testing.
 * Supported runtimes installed (see list above).
 
-### Running SatelliteEval
+### Running SateEval
 
 #### Planning Component
 
@@ -49,7 +49,7 @@ It reads task IDs (corresponding to `container_task_list.tsv` or `wasm_task_list
 
 **Usage:**
 ```bash
-cd SatelliteEval/planning_component
+cd SateEval/planning_component
 python3 planner.py --config config.yaml --output command.txt
 ```
 
@@ -66,7 +66,7 @@ It provides two deployment modes:
 
 **Usage (local execution):**
 ```bash
-cd SatelliteEval/deployment_component
+cd SateEval/deployment_component
 bash deploy_local.sh --input ../../planning_component/command.txt --verbose
 ```
 
@@ -86,7 +86,7 @@ All runtime-specific operations (e.g., Wasm or container) are handled by `wasm_t
 
 **Usage:**
 ```bash
-cd SatelliteEval/execution_component
+cd SateEval/execution_component
 bash test.sh <runtime> <interval> <repeat> <clear_report:y|n> <with_input:y|n> <task_id1> [param1] ...
 ```
 
@@ -110,7 +110,7 @@ It merges performance reports, temperature logs, and power monitor data to compu
 
 **Usage:**
 ```bash
-cd SatelliteEval/extraction_component
+cd SateEval/extraction_component
 python3 extractor.py config.yaml
 ```
 

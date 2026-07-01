@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# SatelliteEval - Containerized Task Execution Script
+# SateEval - Containerized Task Execution Script
 # ============================================================
 # Description:
 #   This script runs benchmark or functional tasks inside containerized

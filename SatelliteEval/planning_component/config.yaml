@@ -3,9 +3,9 @@ repeat: 1
 do_shuffle: false
 random_seed: 42
 runtime: "container"
-base_script: "/home/u/SatelliteWASM/SatelliteEval/execution_component/test.sh"
-container_task_list: "/home/u/SatelliteWASM/SatelliteEval/container_task_list.tsv"
-wasm_task_list: "/home/u/SatelliteWASM/SatelliteEval/wasm_task_list.tsv"
+base_script: "/home/u/SatelliteWASM/SateEval/execution_component/test.sh"
+container_task_list: "/home/u/SatelliteWASM/SateEval/container_task_list.tsv"
+wasm_task_list: "/home/u/SatelliteWASM/SateEval/wasm_task_list.tsv"
 
 task_ids: [13, 7, 10, 19, 22, 25, 16, 3, 27, 26]
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# SatelliteEval - Main Orchestration Script
+# SateEval - Main Orchestration Script
 # ============================================================
 # Description:
 #   This script serves as the entry point for executing multiple

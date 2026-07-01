@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# SatelliteEval - Local Deployment Component
+# SateEval - Local Deployment Component
 # ============================================================
 # Description:
 #   In a single-device setup, this component reads the command file

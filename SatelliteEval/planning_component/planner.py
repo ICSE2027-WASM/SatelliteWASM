@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-SatelliteEval - Planning Component
+SateEval - Planning Component
 ----------------------------------
 Generates executable command lines for the Deployment Component.
 Fully equivalent to your original script, just made configurable.
@@ -19,7 +19,7 @@ def load_config(config_path: str) -> dict:
 
 
 def main():
-    parser = argparse.ArgumentParser(description="SatelliteEval Planning Component")
+    parser = argparse.ArgumentParser(description="SateEval Planning Component")
     parser.add_argument(
         "--config",
         default="planning_component/config.yaml",

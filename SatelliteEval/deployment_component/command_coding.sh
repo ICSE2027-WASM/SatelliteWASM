@@ -1,6 +1,6 @@
 #!/bin/bash
 # ============================================================
-# SatelliteEval - Deployment Component (Pi Frame Encoder/Decoder)
+# SateEval - Deployment Component (Pi Frame Encoder/Decoder)
 # ============================================================
 # Function:
 #   1. Default mode: Read --input file and encode it into a Pi control frame (hex)

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ============================================================
-# SatelliteEval - WASM Task Execution Script
+# SateEval - WASM Task Execution Script
 # ============================================================
 # Description:
 #   This script executes individual WASM benchmark or functional
