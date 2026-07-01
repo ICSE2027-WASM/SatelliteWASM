@@ -1,0 +1,22 @@
+interval: 0
+repeat: 1
+do_shuffle: false
+random_seed: 42
+runtime: "container"
+base_script: "/home/u/SatelliteWASM/SatelliteEval/execution_component/test.sh"
+container_task_list: "/home/u/SatelliteWASM/SatelliteEval/container_task_list.tsv"
+wasm_task_list: "/home/u/SatelliteWASM/SatelliteEval/wasm_task_list.tsv"
+
+task_ids: [13, 7, 10, 19, 22, 25, 16, 3, 27, 26]
+
+task_param_map:
+  binaryTrees: 13
+  fibonacciSequence: 186
+  fourierTransform: 8192
+  helloWorld: 0
+  LZW_compression: 70000
+  mediaFilter: 100
+  mergeSort: 60000
+  numericalIntegration: 200000
+  imageClassification: 0
+  objectDetection: 0

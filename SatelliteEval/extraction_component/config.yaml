@@ -1,0 +1,17 @@
+# config.yaml
+
+runtime: "container"  # Optional values: "container" or "wasm"
+
+start_time: "2025-10-07 14:59:57.329"  # Start time, used for calculating absolute time
+
+task_ids: [13, 7, 10, 19, 22, 25, 16, 3, 27, 26]  # List of task IDs
+
+file_paths:
+  power_data_path: "/home/u/SatelliteWASM/code/execution_component/power_log.csv"
+  task_list_path: "/home/u/SatelliteWASM/code/{runtime}_task_list.tsv"
+  report_path: "/home/u/SatelliteWASM/code/{runtime}_report.tsv"
+  temp_log_path: "/home/u/SatelliteWASM/code/temp_log.tsv"
+
+output_path: "/home/u/SatelliteWASM/output/{runtime}_clean_data"
+
+group_size: 2  # Number of task per group

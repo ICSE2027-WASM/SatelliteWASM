@@ -1,0 +1,18 @@
+paths:
+  common:
+    base_dir: "/home/u/SatelliteWASM"
+  
+  container:
+    tasks_dir: "${paths.common.base_dir}/tasks/container_tasks"
+    report_file: "${paths.common.base_dir}/output/container_report.tsv"
+    task_list_file: "${paths.common.base_dir}/code/container_task_list.tsv"
+    container_script: "./container_test.sh"
+  
+  wasm:
+    tasks_dir: "${paths.common.base_dir}/tasks/wasm_tasks"
+    report_file: "${paths.common.base_dir}/output/wasm_report.tsv"
+    task_list_file: "${paths.common.base_dir}/code/wasm_task_list.tsv"
+    wasm_script: "./wasm_test.sh"
+
+  temp_script: "${paths.common.base_dir}/code/logging_component/temp_logger.sh"
+  log_path: "${paths.common.base_dir}/output/01/test.log"
